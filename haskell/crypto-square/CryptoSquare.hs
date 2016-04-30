@@ -23,7 +23,7 @@ ciphertext :: String -> String
 ciphertext = concat . encipher
 
 normalizeCiphertext :: String -> String
-normalizeCiphertext input = concat . intersperse " " $ encipher input
+normalizeCiphertext input = unwords $ encipher input
 
 encipher :: String -> [String]
 encipher = transpose . plaintextSegments
