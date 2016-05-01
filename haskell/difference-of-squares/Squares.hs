@@ -7,4 +7,4 @@ squareOfSums :: (Integral a) => a -> a
 squareOfSums n = (n*(n+1) `div` 2)^2
 
 difference :: (Integral a) => a -> a
-difference n = (squareOfSums n) - (sumOfSquares n)
+difference n = squareOfSums n - sumOfSquares n
